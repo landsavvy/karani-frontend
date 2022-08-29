@@ -1,0 +1,24 @@
+.form-group {
+  position: relative;
+  /* margin-bottom: 1.5rem; */
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  background: white;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  transition: all 100ms;
+  opacity: 0.7;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -90%, 0);
+  padding: 0 0.5em;
+  margin-left: 1em;
+  opacity: 1;
+  color: #466bd9;
+}
